@@ -35,12 +35,6 @@ import androidx.compose.material3.OutlinedTextField
 import androidx.compose.runtime.mutableStateListOf
 import androidx.compose.ui.Alignment
 
-data class UserData(
-    val id: String,
-    val name: String,
-    val phone: String,
-    val address: String
-)
 @Composable
 fun AddStudentScreen(
     students: MutableList<Student>,
@@ -97,12 +91,15 @@ fun AddStudentScreen(
         Row {
             Button(
                 onClick = {
-                    val newUser = UserData(
+                    val newStudent = Student(
                         id = ID.trim(),
                         name = Name.trim(),
                         phone = Phone.trim(),
                         address = Address.trim()
                     )
+
+                    // 👈 FIX 5: ADD the new user to the shared list
+                    students.add(newStudent)
                     ID = ""
                     Name = ""
                     Phone = ""

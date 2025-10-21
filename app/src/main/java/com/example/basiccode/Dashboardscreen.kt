@@ -30,7 +30,12 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.mutableStateListOf
 import androidx.compose.ui.Alignment
 
-data class Student(val id: Int, val name: String)
+data class Student(
+    val id: String,
+    val name: String,
+    val phone: String,
+    val address: String
+)
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
