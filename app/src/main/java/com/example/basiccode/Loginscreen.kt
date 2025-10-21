@@ -48,7 +48,7 @@ fun StudentAppNavigation(){
             composable("DashboardScreen"){
                 DashboardScreen(
                     students = studentList,
-                    onBackToLogin = { navController.navigate("LoginScreen") }
+                    onBackToAddStudent = { navController.navigate("AddStudentScreen") }
                 )
             }
             composable("AddsStudentScreen"){

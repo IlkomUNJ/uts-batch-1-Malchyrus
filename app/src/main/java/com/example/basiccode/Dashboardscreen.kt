@@ -36,22 +36,14 @@ data class Student(val id: Int, val name: String)
 @Composable
 fun DashboardScreen(
     students: List<Student>,
-    onBackToLogin: () -> Unit
+    onBackToAddStudent: () -> Unit
 ) {
     Scaffold(
         topBar = {
             TopAppBar(
                 title = { Text("Student Roster") },
-                navigationIcon = {
-                    IconButton(onClick = onBackToLogin) {
-                        Icon(
-                            imageVector = Icons.AutoMirrored.Filled.ArrowBack,
-                            contentDescription = "Back to Menu"
-                        )
-                    }
-                },
                 actions = {
-                    IconButton(onClick = { /* do something */ }) {
+                    IconButton(onClick = { onBackToAddStudent }) {
                         Icon(
                             imageVector = Icons.Filled.PlusOne,
                             contentDescription = "Localized description"
