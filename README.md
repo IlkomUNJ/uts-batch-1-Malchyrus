@@ -1,10 +1,10 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/88Jgrsmc)
 # Mobile Computing Mid Term Exam
-Name :Muhamad Rafli Andrea Bastedo
+Name : Muhamad Rafli Andrea Bastedo
 
 NIM  : 1313623009
 
 Class:  A
 
-Gemini Prompt History: ...............
+Gemini Prompt History: https://gemini.google.com/share/873ec1e58704
 
